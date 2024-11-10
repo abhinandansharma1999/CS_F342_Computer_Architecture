@@ -1,0 +1,2234 @@
+Nomenclature for stage
+
+IF : stage = 0
+ID : stage = 1
+EX : stage = 2,3,4,5,6,7,8
+MEM: stage = 9,10,11
+WB : stage = 12
+
+*********************************************************************************************
+                  10
+stage                   =                0
+PC                      =               0000H
+PC_write                =               1
+IR_write                =               1
+ALU_src_A               =               000
+ALU_src_B               =               000
+PC_src                  =               00
+reg_write               =               0
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                  20
+stage                   =                1
+PC                      =               0002H
+PC_write                =               0
+IR_write                =               0
+ALU_src_A               =               000
+ALU_src_B               =               100
+PC_src                  =               00
+reg_write               =               0
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                  30
+stage                   =                7
+PC                      =               0002H
+PC_write                =               0
+IR_write                =               0
+ALU_src_A               =               001
+ALU_src_B               =               011
+PC_src                  =               00
+reg_write               =               0
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                  40
+stage                   =               10
+PC                      =               0002H
+PC_write                =               0
+IR_write                =               0
+ALU_src_A               =               001
+ALU_src_B               =               011
+PC_src                  =               00
+reg_write               =               0
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               1
+mem_write               =               0
+
+                  50
+stage                   =               12
+PC                      =               0002H
+PC_write                =               0
+IR_write                =               0
+ALU_src_A               =               001
+ALU_src_B               =               011
+PC_src                  =               00
+reg_write               =               1
+PC_write_cond           =               0
+mem_to_reg              =               1
+mem_read                =               0
+mem_write               =               0
+
+                  60
+stage                   =                0
+PC                      =               0002H
+PC_write                =               1
+IR_write                =               1
+ALU_src_A               =               000
+ALU_src_B               =               000
+PC_src                  =               00
+reg_write               =               0
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                  70
+stage                   =                1
+PC                      =               0004H
+PC_write                =               0
+IR_write                =               0
+ALU_src_A               =               000
+ALU_src_B               =               100
+PC_src                  =               00
+reg_write               =               0
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                  80
+stage                   =                7
+PC                      =               0004H
+PC_write                =               0
+IR_write                =               0
+ALU_src_A               =               001
+ALU_src_B               =               011
+PC_src                  =               00
+reg_write               =               0
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                  90
+stage                   =               10
+PC                      =               0004H
+PC_write                =               0
+IR_write                =               0
+ALU_src_A               =               001
+ALU_src_B               =               011
+PC_src                  =               00
+reg_write               =               0
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               1
+mem_write               =               0
+
+                 100
+stage                   =               12
+PC                      =               0004H
+PC_write                =               0
+IR_write                =               0
+ALU_src_A               =               001
+ALU_src_B               =               011
+PC_src                  =               00
+reg_write               =               1
+PC_write_cond           =               0
+mem_to_reg              =               1
+mem_read                =               0
+mem_write               =               0
+
+                 110
+stage                   =                0
+PC                      =               0004H
+PC_write                =               1
+IR_write                =               1
+ALU_src_A               =               000
+ALU_src_B               =               000
+PC_src                  =               00
+reg_write               =               0
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                 120
+stage                   =                1
+PC                      =               0006H
+PC_write                =               0
+IR_write                =               0
+ALU_src_A               =               000
+ALU_src_B               =               100
+PC_src                  =               00
+reg_write               =               0
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                 130
+stage                   =                2
+PC                      =               0006H
+PC_write                =               0
+IR_write                =               0
+ALU_src_A               =               001
+ALU_src_B               =               001
+PC_src                  =               00
+reg_write               =               0
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                 140
+stage                   =                9
+PC                      =               0006H
+PC_write                =               0
+IR_write                =               0
+ALU_src_A               =               001
+ALU_src_B               =               001
+PC_src                  =               00
+reg_write               =               1
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                 150
+stage                   =                0
+PC                      =               0006H
+PC_write                =               1
+IR_write                =               1
+ALU_src_A               =               000
+ALU_src_B               =               000
+PC_src                  =               00
+reg_write               =               0
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                 160
+stage                   =                1
+PC                      =               0008H
+PC_write                =               0
+IR_write                =               0
+ALU_src_A               =               000
+ALU_src_B               =               100
+PC_src                  =               00
+reg_write               =               0
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                 170
+stage                   =                4
+PC                      =               0008H
+PC_write                =               0
+IR_write                =               0
+ALU_src_A               =               011
+ALU_src_B               =               010
+PC_src                  =               00
+reg_write               =               0
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                 180
+stage                   =                9
+PC                      =               0008H
+PC_write                =               0
+IR_write                =               0
+ALU_src_A               =               011
+ALU_src_B               =               010
+PC_src                  =               00
+reg_write               =               1
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                 190
+stage                   =                0
+PC                      =               0008H
+PC_write                =               1
+IR_write                =               1
+ALU_src_A               =               000
+ALU_src_B               =               000
+PC_src                  =               00
+reg_write               =               0
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                 200
+stage                   =                1
+PC                      =               000aH
+PC_write                =               0
+IR_write                =               0
+ALU_src_A               =               000
+ALU_src_B               =               100
+PC_src                  =               00
+reg_write               =               0
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                 210
+stage                   =                5
+PC                      =               000aH
+PC_write                =               0
+IR_write                =               0
+ALU_src_A               =               010
+ALU_src_B               =               010
+PC_src                  =               00
+reg_write               =               0
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                 220
+stage                   =                9
+PC                      =               000aH
+PC_write                =               0
+IR_write                =               0
+ALU_src_A               =               010
+ALU_src_B               =               010
+PC_src                  =               00
+reg_write               =               1
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                 230
+stage                   =                0
+PC                      =               000aH
+PC_write                =               1
+IR_write                =               1
+ALU_src_A               =               000
+ALU_src_B               =               000
+PC_src                  =               00
+reg_write               =               0
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                 240
+stage                   =                1
+PC                      =               000cH
+PC_write                =               0
+IR_write                =               0
+ALU_src_A               =               000
+ALU_src_B               =               100
+PC_src                  =               00
+reg_write               =               0
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                 250
+stage                   =                8
+PC                      =               000cH
+PC_write                =               0
+IR_write                =               0
+ALU_src_A               =               001
+ALU_src_B               =               001
+PC_src                  =               10
+reg_write               =               0
+PC_write_cond           =               1
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                 260
+stage                   =                0
+PC                      =               000cH
+PC_write                =               1
+IR_write                =               1
+ALU_src_A               =               000
+ALU_src_B               =               000
+PC_src                  =               00
+reg_write               =               0
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                 270
+stage                   =                1
+PC                      =               000eH
+PC_write                =               0
+IR_write                =               0
+ALU_src_A               =               000
+ALU_src_B               =               100
+PC_src                  =               00
+reg_write               =               0
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                 280
+stage                   =                8
+PC                      =               000eH
+PC_write                =               0
+IR_write                =               0
+ALU_src_A               =               001
+ALU_src_B               =               001
+PC_src                  =               10
+reg_write               =               0
+PC_write_cond           =               1
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                 290
+stage                   =                0
+PC                      =               0010H
+PC_write                =               1
+IR_write                =               1
+ALU_src_A               =               000
+ALU_src_B               =               000
+PC_src                  =               00
+reg_write               =               0
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                 300
+stage                   =                1
+PC                      =               0012H
+PC_write                =               0
+IR_write                =               0
+ALU_src_A               =               000
+ALU_src_B               =               100
+PC_src                  =               00
+reg_write               =               0
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                 310
+stage                   =                2
+PC                      =               0012H
+PC_write                =               0
+IR_write                =               0
+ALU_src_A               =               001
+ALU_src_B               =               001
+PC_src                  =               00
+reg_write               =               0
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                 320
+stage                   =                9
+PC                      =               0012H
+PC_write                =               0
+IR_write                =               0
+ALU_src_A               =               001
+ALU_src_B               =               001
+PC_src                  =               00
+reg_write               =               1
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                 330
+stage                   =                0
+PC                      =               0012H
+PC_write                =               1
+IR_write                =               1
+ALU_src_A               =               000
+ALU_src_B               =               000
+PC_src                  =               00
+reg_write               =               0
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                 340
+stage                   =                1
+PC                      =               0014H
+PC_write                =               0
+IR_write                =               0
+ALU_src_A               =               000
+ALU_src_B               =               100
+PC_src                  =               00
+reg_write               =               0
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                 350
+stage                   =                5
+PC                      =               0014H
+PC_write                =               0
+IR_write                =               0
+ALU_src_A               =               010
+ALU_src_B               =               010
+PC_src                  =               00
+reg_write               =               0
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                 360
+stage                   =                9
+PC                      =               0014H
+PC_write                =               0
+IR_write                =               0
+ALU_src_A               =               010
+ALU_src_B               =               010
+PC_src                  =               00
+reg_write               =               1
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                 370
+stage                   =                0
+PC                      =               0014H
+PC_write                =               1
+IR_write                =               1
+ALU_src_A               =               000
+ALU_src_B               =               000
+PC_src                  =               00
+reg_write               =               0
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                 380
+stage                   =                1
+PC                      =               0016H
+PC_write                =               0
+IR_write                =               0
+ALU_src_A               =               000
+ALU_src_B               =               100
+PC_src                  =               00
+reg_write               =               0
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                 390
+stage                   =                4
+PC                      =               0016H
+PC_write                =               0
+IR_write                =               0
+ALU_src_A               =               011
+ALU_src_B               =               010
+PC_src                  =               00
+reg_write               =               0
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                 400
+stage                   =                9
+PC                      =               0016H
+PC_write                =               0
+IR_write                =               0
+ALU_src_A               =               011
+ALU_src_B               =               010
+PC_src                  =               00
+reg_write               =               1
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                 410
+stage                   =                0
+PC                      =               0016H
+PC_write                =               1
+IR_write                =               1
+ALU_src_A               =               000
+ALU_src_B               =               000
+PC_src                  =               00
+reg_write               =               0
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                 420
+stage                   =                1
+PC                      =               0018H
+PC_write                =               0
+IR_write                =               0
+ALU_src_A               =               000
+ALU_src_B               =               100
+PC_src                  =               00
+reg_write               =               0
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                 430
+stage                   =                2
+PC                      =               0018H
+PC_write                =               0
+IR_write                =               0
+ALU_src_A               =               001
+ALU_src_B               =               001
+PC_src                  =               00
+reg_write               =               0
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                 440
+stage                   =                9
+PC                      =               0018H
+PC_write                =               0
+IR_write                =               0
+ALU_src_A               =               001
+ALU_src_B               =               001
+PC_src                  =               00
+reg_write               =               1
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                 450
+stage                   =                0
+PC                      =               0018H
+PC_write                =               1
+IR_write                =               1
+ALU_src_A               =               000
+ALU_src_B               =               000
+PC_src                  =               00
+reg_write               =               0
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                 460
+stage                   =                1
+PC                      =               001aH
+PC_write                =               0
+IR_write                =               0
+ALU_src_A               =               000
+ALU_src_B               =               100
+PC_src                  =               00
+reg_write               =               0
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                 470
+stage                   =                2
+PC                      =               001aH
+PC_write                =               0
+IR_write                =               0
+ALU_src_A               =               001
+ALU_src_B               =               001
+PC_src                  =               00
+reg_write               =               0
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                 480
+stage                   =                9
+PC                      =               001aH
+PC_write                =               0
+IR_write                =               0
+ALU_src_A               =               001
+ALU_src_B               =               001
+PC_src                  =               00
+reg_write               =               1
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                 490
+stage                   =                0
+PC                      =               001aH
+PC_write                =               1
+IR_write                =               1
+ALU_src_A               =               000
+ALU_src_B               =               000
+PC_src                  =               00
+reg_write               =               0
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                 500
+stage                   =                1
+PC                      =               001cH
+PC_write                =               0
+IR_write                =               0
+ALU_src_A               =               000
+ALU_src_B               =               100
+PC_src                  =               00
+reg_write               =               0
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                 510
+stage                   =                5
+PC                      =               001cH
+PC_write                =               0
+IR_write                =               0
+ALU_src_A               =               010
+ALU_src_B               =               010
+PC_src                  =               00
+reg_write               =               0
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                 520
+stage                   =                9
+PC                      =               001cH
+PC_write                =               0
+IR_write                =               0
+ALU_src_A               =               010
+ALU_src_B               =               010
+PC_src                  =               00
+reg_write               =               1
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                 530
+stage                   =                0
+PC                      =               001cH
+PC_write                =               1
+IR_write                =               1
+ALU_src_A               =               000
+ALU_src_B               =               000
+PC_src                  =               00
+reg_write               =               0
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                 540
+stage                   =                1
+PC                      =               001eH
+PC_write                =               0
+IR_write                =               0
+ALU_src_A               =               000
+ALU_src_B               =               100
+PC_src                  =               00
+reg_write               =               0
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                 550
+stage                   =                5
+PC                      =               001eH
+PC_write                =               0
+IR_write                =               0
+ALU_src_A               =               010
+ALU_src_B               =               010
+PC_src                  =               00
+reg_write               =               0
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                 560
+stage                   =                9
+PC                      =               001eH
+PC_write                =               0
+IR_write                =               0
+ALU_src_A               =               010
+ALU_src_B               =               010
+PC_src                  =               00
+reg_write               =               1
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                 570
+stage                   =                0
+PC                      =               001eH
+PC_write                =               1
+IR_write                =               1
+ALU_src_A               =               000
+ALU_src_B               =               000
+PC_src                  =               00
+reg_write               =               0
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                 580
+stage                   =                1
+PC                      =               0020H
+PC_write                =               0
+IR_write                =               0
+ALU_src_A               =               000
+ALU_src_B               =               100
+PC_src                  =               00
+reg_write               =               0
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                 590
+stage                   =                6
+PC                      =               0020H
+PC_write                =               1
+IR_write                =               0
+ALU_src_A               =               000
+ALU_src_B               =               100
+PC_src                  =               01
+reg_write               =               0
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                 600
+stage                   =                0
+PC                      =               0022H
+PC_write                =               1
+IR_write                =               1
+ALU_src_A               =               000
+ALU_src_B               =               000
+PC_src                  =               00
+reg_write               =               0
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                 610
+stage                   =                1
+PC                      =               0024H
+PC_write                =               0
+IR_write                =               0
+ALU_src_A               =               000
+ALU_src_B               =               100
+PC_src                  =               00
+reg_write               =               0
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                 620
+stage                   =                3
+PC                      =               0024H
+PC_write                =               0
+IR_write                =               0
+ALU_src_A               =               100
+ALU_src_B               =               010
+PC_src                  =               00
+reg_write               =               0
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                 630
+stage                   =                9
+PC                      =               0024H
+PC_write                =               0
+IR_write                =               0
+ALU_src_A               =               100
+ALU_src_B               =               010
+PC_src                  =               00
+reg_write               =               1
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                 640
+stage                   =                0
+PC                      =               0024H
+PC_write                =               1
+IR_write                =               1
+ALU_src_A               =               000
+ALU_src_B               =               000
+PC_src                  =               00
+reg_write               =               0
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                 650
+stage                   =                1
+PC                      =               0026H
+PC_write                =               0
+IR_write                =               0
+ALU_src_A               =               000
+ALU_src_B               =               100
+PC_src                  =               00
+reg_write               =               0
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                 660
+stage                   =                3
+PC                      =               0026H
+PC_write                =               0
+IR_write                =               0
+ALU_src_A               =               100
+ALU_src_B               =               010
+PC_src                  =               00
+reg_write               =               0
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                 670
+stage                   =                9
+PC                      =               0026H
+PC_write                =               0
+IR_write                =               0
+ALU_src_A               =               100
+ALU_src_B               =               010
+PC_src                  =               00
+reg_write               =               1
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                 680
+stage                   =                0
+PC                      =               0026H
+PC_write                =               1
+IR_write                =               1
+ALU_src_A               =               000
+ALU_src_B               =               000
+PC_src                  =               00
+reg_write               =               0
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                 690
+stage                   =                1
+PC                      =               0028H
+PC_write                =               0
+IR_write                =               0
+ALU_src_A               =               000
+ALU_src_B               =               100
+PC_src                  =               00
+reg_write               =               0
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                 700
+stage                   =                3
+PC                      =               0028H
+PC_write                =               0
+IR_write                =               0
+ALU_src_A               =               100
+ALU_src_B               =               010
+PC_src                  =               00
+reg_write               =               0
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                 710
+stage                   =                9
+PC                      =               0028H
+PC_write                =               0
+IR_write                =               0
+ALU_src_A               =               100
+ALU_src_B               =               010
+PC_src                  =               00
+reg_write               =               1
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                 720
+stage                   =                0
+PC                      =               0028H
+PC_write                =               1
+IR_write                =               1
+ALU_src_A               =               000
+ALU_src_B               =               000
+PC_src                  =               00
+reg_write               =               0
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                 730
+stage                   =                1
+PC                      =               002aH
+PC_write                =               0
+IR_write                =               0
+ALU_src_A               =               000
+ALU_src_B               =               100
+PC_src                  =               00
+reg_write               =               0
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                 740
+stage                   =                7
+PC                      =               002aH
+PC_write                =               0
+IR_write                =               0
+ALU_src_A               =               001
+ALU_src_B               =               011
+PC_src                  =               00
+reg_write               =               0
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                 750
+stage                   =               11
+PC                      =               002aH
+PC_write                =               0
+IR_write                =               0
+ALU_src_A               =               001
+ALU_src_B               =               011
+PC_src                  =               00
+reg_write               =               0
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               1
+
+                 760
+stage                   =                0
+PC                      =               002aH
+PC_write                =               1
+IR_write                =               1
+ALU_src_A               =               000
+ALU_src_B               =               000
+PC_src                  =               00
+reg_write               =               0
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                 770
+stage                   =                1
+PC                      =               002cH
+PC_write                =               0
+IR_write                =               0
+ALU_src_A               =               000
+ALU_src_B               =               100
+PC_src                  =               00
+reg_write               =               0
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                 780
+stage                   =                7
+PC                      =               002cH
+PC_write                =               0
+IR_write                =               0
+ALU_src_A               =               001
+ALU_src_B               =               011
+PC_src                  =               00
+reg_write               =               0
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                 790
+stage                   =               11
+PC                      =               002cH
+PC_write                =               0
+IR_write                =               0
+ALU_src_A               =               001
+ALU_src_B               =               011
+PC_src                  =               00
+reg_write               =               0
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               1
+
+                 800
+stage                   =                0
+PC                      =               002cH
+PC_write                =               1
+IR_write                =               1
+ALU_src_A               =               000
+ALU_src_B               =               000
+PC_src                  =               00
+reg_write               =               0
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                 810
+stage                   =                1
+PC                      =               002eH
+PC_write                =               0
+IR_write                =               0
+ALU_src_A               =               000
+ALU_src_B               =               100
+PC_src                  =               00
+reg_write               =               0
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                 820
+stage                   =                2
+PC                      =               002eH
+PC_write                =               0
+IR_write                =               0
+ALU_src_A               =               001
+ALU_src_B               =               001
+PC_src                  =               00
+reg_write               =               0
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                 830
+stage                   =                9
+PC                      =               002eH
+PC_write                =               0
+IR_write                =               0
+ALU_src_A               =               001
+ALU_src_B               =               001
+PC_src                  =               00
+reg_write               =               1
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                 840
+stage                   =                0
+PC                      =               002eH
+PC_write                =               1
+IR_write                =               1
+ALU_src_A               =               000
+ALU_src_B               =               000
+PC_src                  =               00
+reg_write               =               0
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                 850
+stage                   =                1
+PC                      =               0030H
+PC_write                =               0
+IR_write                =               0
+ALU_src_A               =               000
+ALU_src_B               =               100
+PC_src                  =               00
+reg_write               =               0
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                 860
+stage                   =                4
+PC                      =               0030H
+PC_write                =               0
+IR_write                =               0
+ALU_src_A               =               011
+ALU_src_B               =               010
+PC_src                  =               00
+reg_write               =               0
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                 870
+stage                   =                9
+PC                      =               0030H
+PC_write                =               0
+IR_write                =               0
+ALU_src_A               =               011
+ALU_src_B               =               010
+PC_src                  =               00
+reg_write               =               1
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                 880
+stage                   =                0
+PC                      =               0030H
+PC_write                =               1
+IR_write                =               1
+ALU_src_A               =               000
+ALU_src_B               =               000
+PC_src                  =               00
+reg_write               =               0
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                 890
+stage                   =                1
+PC                      =               0032H
+PC_write                =               0
+IR_write                =               0
+ALU_src_A               =               000
+ALU_src_B               =               100
+PC_src                  =               00
+reg_write               =               0
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                 900
+stage                   =                5
+PC                      =               0032H
+PC_write                =               0
+IR_write                =               0
+ALU_src_A               =               010
+ALU_src_B               =               010
+PC_src                  =               00
+reg_write               =               0
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                 910
+stage                   =                9
+PC                      =               0032H
+PC_write                =               0
+IR_write                =               0
+ALU_src_A               =               010
+ALU_src_B               =               010
+PC_src                  =               00
+reg_write               =               1
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                 920
+stage                   =                0
+PC                      =               0032H
+PC_write                =               1
+IR_write                =               1
+ALU_src_A               =               000
+ALU_src_B               =               000
+PC_src                  =               00
+reg_write               =               0
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                 930
+stage                   =                1
+PC                      =               0034H
+PC_write                =               0
+IR_write                =               0
+ALU_src_A               =               000
+ALU_src_B               =               100
+PC_src                  =               00
+reg_write               =               0
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                 940
+stage                   =                8
+PC                      =               0034H
+PC_write                =               0
+IR_write                =               0
+ALU_src_A               =               001
+ALU_src_B               =               001
+PC_src                  =               10
+reg_write               =               0
+PC_write_cond           =               1
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                 950
+stage                   =                0
+PC                      =               0034H
+PC_write                =               1
+IR_write                =               1
+ALU_src_A               =               000
+ALU_src_B               =               000
+PC_src                  =               00
+reg_write               =               0
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                 960
+stage                   =                1
+PC                      =               0036H
+PC_write                =               0
+IR_write                =               0
+ALU_src_A               =               000
+ALU_src_B               =               100
+PC_src                  =               00
+reg_write               =               0
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                 970
+stage                   =                8
+PC                      =               0036H
+PC_write                =               0
+IR_write                =               0
+ALU_src_A               =               001
+ALU_src_B               =               001
+PC_src                  =               10
+reg_write               =               0
+PC_write_cond           =               1
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                 980
+stage                   =                0
+PC                      =               0038H
+PC_write                =               1
+IR_write                =               1
+ALU_src_A               =               000
+ALU_src_B               =               000
+PC_src                  =               00
+reg_write               =               0
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                 990
+stage                   =                1
+PC                      =               003aH
+PC_write                =               0
+IR_write                =               0
+ALU_src_A               =               000
+ALU_src_B               =               100
+PC_src                  =               00
+reg_write               =               0
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                1000
+stage                   =                4
+PC                      =               003aH
+PC_write                =               0
+IR_write                =               0
+ALU_src_A               =               011
+ALU_src_B               =               010
+PC_src                  =               00
+reg_write               =               0
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                1010
+stage                   =                9
+PC                      =               003aH
+PC_write                =               0
+IR_write                =               0
+ALU_src_A               =               011
+ALU_src_B               =               010
+PC_src                  =               00
+reg_write               =               1
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                1020
+stage                   =                0
+PC                      =               003aH
+PC_write                =               1
+IR_write                =               1
+ALU_src_A               =               000
+ALU_src_B               =               000
+PC_src                  =               00
+reg_write               =               0
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                1030
+stage                   =                1
+PC                      =               003cH
+PC_write                =               0
+IR_write                =               0
+ALU_src_A               =               000
+ALU_src_B               =               100
+PC_src                  =               00
+reg_write               =               0
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                1040
+stage                   =                2
+PC                      =               003cH
+PC_write                =               0
+IR_write                =               0
+ALU_src_A               =               001
+ALU_src_B               =               001
+PC_src                  =               00
+reg_write               =               0
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                1050
+stage                   =                9
+PC                      =               003cH
+PC_write                =               0
+IR_write                =               0
+ALU_src_A               =               001
+ALU_src_B               =               001
+PC_src                  =               00
+reg_write               =               1
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                1060
+stage                   =                0
+PC                      =               003cH
+PC_write                =               1
+IR_write                =               1
+ALU_src_A               =               000
+ALU_src_B               =               000
+PC_src                  =               00
+reg_write               =               0
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                1070
+stage                   =                1
+PC                      =               003eH
+PC_write                =               0
+IR_write                =               0
+ALU_src_A               =               000
+ALU_src_B               =               100
+PC_src                  =               00
+reg_write               =               0
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                1080
+stage                   =                5
+PC                      =               003eH
+PC_write                =               0
+IR_write                =               0
+ALU_src_A               =               010
+ALU_src_B               =               010
+PC_src                  =               00
+reg_write               =               0
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                1090
+stage                   =                9
+PC                      =               003eH
+PC_write                =               0
+IR_write                =               0
+ALU_src_A               =               010
+ALU_src_B               =               010
+PC_src                  =               00
+reg_write               =               1
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                1100
+stage                   =                0
+PC                      =               003eH
+PC_write                =               1
+IR_write                =               1
+ALU_src_A               =               000
+ALU_src_B               =               000
+PC_src                  =               00
+reg_write               =               0
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                1110
+stage                   =                1
+PC                      =               0040H
+PC_write                =               0
+IR_write                =               0
+ALU_src_A               =               000
+ALU_src_B               =               100
+PC_src                  =               00
+reg_write               =               0
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                1120
+stage                   =                2
+PC                      =               0040H
+PC_write                =               0
+IR_write                =               0
+ALU_src_A               =               001
+ALU_src_B               =               001
+PC_src                  =               00
+reg_write               =               0
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                1130
+stage                   =                9
+PC                      =               0040H
+PC_write                =               0
+IR_write                =               0
+ALU_src_A               =               001
+ALU_src_B               =               001
+PC_src                  =               00
+reg_write               =               1
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                1140
+stage                   =                0
+PC                      =               0040H
+PC_write                =               1
+IR_write                =               1
+ALU_src_A               =               000
+ALU_src_B               =               000
+PC_src                  =               00
+reg_write               =               0
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                1150
+stage                   =                1
+PC                      =               0042H
+PC_write                =               0
+IR_write                =               0
+ALU_src_A               =               000
+ALU_src_B               =               100
+PC_src                  =               00
+reg_write               =               0
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                1160
+stage                   =                5
+PC                      =               0042H
+PC_write                =               0
+IR_write                =               0
+ALU_src_A               =               010
+ALU_src_B               =               010
+PC_src                  =               00
+reg_write               =               0
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                1170
+stage                   =                9
+PC                      =               0042H
+PC_write                =               0
+IR_write                =               0
+ALU_src_A               =               010
+ALU_src_B               =               010
+PC_src                  =               00
+reg_write               =               1
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                1180
+stage                   =                0
+PC                      =               0042H
+PC_write                =               1
+IR_write                =               1
+ALU_src_A               =               000
+ALU_src_B               =               000
+PC_src                  =               00
+reg_write               =               0
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                1190
+stage                   =                1
+PC                      =               0044H
+PC_write                =               0
+IR_write                =               0
+ALU_src_A               =               000
+ALU_src_B               =               100
+PC_src                  =               00
+reg_write               =               0
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                1200
+stage                   =                5
+PC                      =               0044H
+PC_write                =               0
+IR_write                =               0
+ALU_src_A               =               010
+ALU_src_B               =               010
+PC_src                  =               00
+reg_write               =               0
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                1210
+stage                   =                9
+PC                      =               0044H
+PC_write                =               0
+IR_write                =               0
+ALU_src_A               =               010
+ALU_src_B               =               010
+PC_src                  =               00
+reg_write               =               1
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                1220
+stage                   =                0
+PC                      =               0044H
+PC_write                =               1
+IR_write                =               1
+ALU_src_A               =               000
+ALU_src_B               =               000
+PC_src                  =               00
+reg_write               =               0
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                1230
+stage                   =                1
+PC                      =               0046H
+PC_write                =               0
+IR_write                =               0
+ALU_src_A               =               000
+ALU_src_B               =               100
+PC_src                  =               00
+reg_write               =               0
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                1240
+stage                   =                3
+PC                      =               0046H
+PC_write                =               0
+IR_write                =               0
+ALU_src_A               =               100
+ALU_src_B               =               010
+PC_src                  =               00
+reg_write               =               0
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                1250
+stage                   =                9
+PC                      =               0046H
+PC_write                =               0
+IR_write                =               0
+ALU_src_A               =               100
+ALU_src_B               =               010
+PC_src                  =               00
+reg_write               =               1
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                1260
+stage                   =                0
+PC                      =               0046H
+PC_write                =               1
+IR_write                =               1
+ALU_src_A               =               000
+ALU_src_B               =               000
+PC_src                  =               00
+reg_write               =               0
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                1270
+stage                   =                1
+PC                      =               0048H
+PC_write                =               0
+IR_write                =               0
+ALU_src_A               =               000
+ALU_src_B               =               100
+PC_src                  =               00
+reg_write               =               0
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                1280
+stage                   =                3
+PC                      =               0048H
+PC_write                =               0
+IR_write                =               0
+ALU_src_A               =               100
+ALU_src_B               =               010
+PC_src                  =               00
+reg_write               =               0
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                1290
+stage                   =                9
+PC                      =               0048H
+PC_write                =               0
+IR_write                =               0
+ALU_src_A               =               100
+ALU_src_B               =               010
+PC_src                  =               00
+reg_write               =               1
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                1300
+stage                   =                0
+PC                      =               0048H
+PC_write                =               1
+IR_write                =               1
+ALU_src_A               =               000
+ALU_src_B               =               000
+PC_src                  =               00
+reg_write               =               0
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                1310
+stage                   =                1
+PC                      =               004aH
+PC_write                =               0
+IR_write                =               0
+ALU_src_A               =               000
+ALU_src_B               =               100
+PC_src                  =               00
+reg_write               =               0
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                1320
+stage                   =                3
+PC                      =               004aH
+PC_write                =               0
+IR_write                =               0
+ALU_src_A               =               100
+ALU_src_B               =               010
+PC_src                  =               00
+reg_write               =               0
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                1330
+stage                   =                9
+PC                      =               004aH
+PC_write                =               0
+IR_write                =               0
+ALU_src_A               =               100
+ALU_src_B               =               010
+PC_src                  =               00
+reg_write               =               1
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                1340
+stage                   =                0
+PC                      =               004aH
+PC_write                =               1
+IR_write                =               1
+ALU_src_A               =               000
+ALU_src_B               =               000
+PC_src                  =               00
+reg_write               =               0
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                1350
+stage                   =                1
+PC                      =               004cH
+PC_write                =               0
+IR_write                =               0
+ALU_src_A               =               000
+ALU_src_B               =               100
+PC_src                  =               00
+reg_write               =               0
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                1360
+stage                   =                2
+PC                      =               004cH
+PC_write                =               0
+IR_write                =               0
+ALU_src_A               =               001
+ALU_src_B               =               001
+PC_src                  =               00
+reg_write               =               0
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                1370
+stage                   =                9
+PC                      =               004cH
+PC_write                =               0
+IR_write                =               0
+ALU_src_A               =               001
+ALU_src_B               =               001
+PC_src                  =               00
+reg_write               =               1
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                1380
+stage                   =                0
+PC                      =               004cH
+PC_write                =               1
+IR_write                =               1
+ALU_src_A               =               000
+ALU_src_B               =               000
+PC_src                  =               00
+reg_write               =               0
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                1390
+stage                   =                1
+PC                      =               004eH
+PC_write                =               0
+IR_write                =               0
+ALU_src_A               =               000
+ALU_src_B               =               100
+PC_src                  =               00
+reg_write               =               0
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                1400
+stage                   =                6
+PC                      =               004eH
+PC_write                =               1
+IR_write                =               0
+ALU_src_A               =               000
+ALU_src_B               =               100
+PC_src                  =               01
+reg_write               =               0
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                1410
+stage                   =                0
+PC                      =               0052H
+PC_write                =               1
+IR_write                =               1
+ALU_src_A               =               000
+ALU_src_B               =               000
+PC_src                  =               00
+reg_write               =               0
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                1420
+stage                   =                1
+PC                      =               0054H
+PC_write                =               0
+IR_write                =               0
+ALU_src_A               =               000
+ALU_src_B               =               100
+PC_src                  =               00
+reg_write               =               0
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                1430
+stage                   =                2
+PC                      =               0054H
+PC_write                =               0
+IR_write                =               0
+ALU_src_A               =               001
+ALU_src_B               =               001
+PC_src                  =               00
+reg_write               =               0
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                1440
+stage                   =                9
+PC                      =               0054H
+PC_write                =               0
+IR_write                =               0
+ALU_src_A               =               001
+ALU_src_B               =               001
+PC_src                  =               00
+reg_write               =               1
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                1450
+stage                   =                0
+PC                      =               0054H
+PC_write                =               1
+IR_write                =               1
+ALU_src_A               =               000
+ALU_src_B               =               000
+PC_src                  =               00
+reg_write               =               0
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                1460
+stage                   =                1
+PC                      =               0056H
+PC_write                =               0
+IR_write                =               0
+ALU_src_A               =               000
+ALU_src_B               =               100
+PC_src                  =               00
+reg_write               =               0
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                1470
+stage                   =                2
+PC                      =               0056H
+PC_write                =               0
+IR_write                =               0
+ALU_src_A               =               001
+ALU_src_B               =               001
+PC_src                  =               00
+reg_write               =               0
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                1480
+stage                   =                9
+PC                      =               0056H
+PC_write                =               0
+IR_write                =               0
+ALU_src_A               =               001
+ALU_src_B               =               001
+PC_src                  =               00
+reg_write               =               1
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                1490
+stage                   =                0
+PC                      =               0056H
+PC_write                =               1
+IR_write                =               1
+ALU_src_A               =               000
+ALU_src_B               =               000
+PC_src                  =               00
+reg_write               =               0
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                1500
+stage                   =                1
+PC                      =               0058H
+PC_write                =               0
+IR_write                =               0
+ALU_src_A               =               000
+ALU_src_B               =               100
+PC_src                  =               00
+reg_write               =               0
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                1510
+stage                   =                2
+PC                      =               0058H
+PC_write                =               0
+IR_write                =               0
+ALU_src_A               =               001
+ALU_src_B               =               001
+PC_src                  =               00
+reg_write               =               0
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                1520
+stage                   =                9
+PC                      =               0058H
+PC_write                =               0
+IR_write                =               0
+ALU_src_A               =               001
+ALU_src_B               =               001
+PC_src                  =               00
+reg_write               =               1
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                1530
+stage                   =                0
+PC                      =               0058H
+PC_write                =               1
+IR_write                =               1
+ALU_src_A               =               000
+ALU_src_B               =               000
+PC_src                  =               00
+reg_write               =               0
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                1540
+stage                   =                1
+PC                      =               005aH
+PC_write                =               0
+IR_write                =               0
+ALU_src_A               =               000
+ALU_src_B               =               100
+PC_src                  =               00
+reg_write               =               0
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                1550
+stage                   =                2
+PC                      =               005aH
+PC_write                =               0
+IR_write                =               0
+ALU_src_A               =               001
+ALU_src_B               =               001
+PC_src                  =               00
+reg_write               =               0
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                1560
+stage                   =                9
+PC                      =               005aH
+PC_write                =               0
+IR_write                =               0
+ALU_src_A               =               001
+ALU_src_B               =               001
+PC_src                  =               00
+reg_write               =               1
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                1570
+stage                   =                0
+PC                      =               005aH
+PC_write                =               1
+IR_write                =               1
+ALU_src_A               =               000
+ALU_src_B               =               000
+PC_src                  =               00
+reg_write               =               0
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                1580
+stage                   =                1
+PC                      =               005cH
+PC_write                =               0
+IR_write                =               0
+ALU_src_A               =               000
+ALU_src_B               =               100
+PC_src                  =               00
+reg_write               =               0
+PC_write_cond           =               0
+mem_to_reg              =               0
+mem_read                =               0
+mem_write               =               0
+
+                1590
+stage                   =                x
+PC                      =               005cH
+PC_write                =               x
+IR_write                =               x
+ALU_src_A               =               xxx
+ALU_src_B               =               xxx
+PC_src                  =               xx
+reg_write               =               x
+PC_write_cond           =               x
+mem_to_reg              =               x
+mem_read                =               x
+mem_write               =               x
