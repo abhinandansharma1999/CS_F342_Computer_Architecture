@@ -1,0 +1,80 @@
+$date
+	Tue Mar 30 00:05:24 2021
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module tb_mult_p $end
+$var wire 16 ! P [15:0] $end
+$var reg 8 " A [7:0] $end
+$var reg 8 # B [7:0] $end
+$var reg 1 $ clk $end
+$scope module uut $end
+$var wire 8 % A [7:0] $end
+$var wire 8 & B [7:0] $end
+$var wire 1 $ clk $end
+$var reg 16 ' P [15:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx '
+b1111111 &
+b1111111 %
+0$
+b1111111 #
+b1111111 "
+bx !
+$end
+#25
+1$
+#50
+0$
+b11111111 #
+b11111111 &
+b11111111 "
+b11111111 %
+#75
+1$
+#100
+0$
+b1101010 #
+b1101010 &
+b1001100 "
+b1001100 %
+#125
+1$
+#150
+0$
+b110111 #
+b110111 &
+b1111000 "
+b1111000 %
+#175
+b11111100000001 !
+b11111100000001 '
+1$
+#200
+0$
+#225
+b1111111000000001 !
+b1111111000000001 '
+1$
+#250
+0$
+#275
+b1111101111000 !
+b1111101111000 '
+1$
+#300
+0$
+#325
+b1100111001000 !
+b1100111001000 '
+1$
+#350
+0$
